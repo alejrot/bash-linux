@@ -1,0 +1,208 @@
+site_name: Bash & GNU/Linux
+
+# site_url:   
+
+# repo_url: https://github.com/MarceloMarot/bash-linux
+# repo_name: bash-linux
+# edit_uri: edit/master/docs/
+
+copyright: Copyright &copy; 2024 Marcelo Marot Rosas
+
+
+theme: 
+  name: material
+  # favicon: images/favicon.png   # no anda
+  icon:
+    #icono de pagina
+    logo: simple/gnubash
+    # iconos de avance y retroceso 
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    # Icono de repositorio
+    repo: fontawesome/brands/github
+    # Icono de acciones de repositorio
+    edit: material/pencil 
+    view: material/eye
+    #  iconos de etiquetas
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+      yaml: simple/yaml
+      python: fontawesome/brands/python
+      docker: fontawesome/brands/docker
+      podman: simple/podman
+      markdown: fontawesome/brands/markdown
+      mkdocs: simple/materialformkdocs
+      ts: simple/typescript
+      csv: fontawesome/solid/file-csv
+      bash: simple/gnubash
+      # icono comodín
+      # default: material/cursor-default-click
+
+  # carpeta local con extras (opcional)
+  # custom_dir: overrides
+  
+  features:
+    - content.tabs.link         # pestañas sincronizadas
+    - content.code.copy         # botón de copia 
+    - content.code.annotate     # botones de anotaciones emergentes
+    - search.suggest      # sugerencias en caja de búsqueda
+    - search.highlight  # remarcado en página
+    - search.share      # link 'compartir' en caja de búsqueda
+    # - search.exclude
+    - navigation.instant
+    - navigation.instant.progress   # progreso de carga (conexiones lentas)
+    - navigation.tracking
+    # pestañas de contenido
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expand
+    # - navigation.prune 
+    # - navigation.indexes 
+    - toc.follow
+    # - toc.integrate   # integra indice derecho (secciones) adentro del izquierdo (rutas)
+    - navigation.top  # boton emergente para volver al inicio  - aparece al intentar subir con el scroll
+    # Pie de pagina
+    - navigation.footer
+    # header y anuncios
+    - header.autohide
+    - announce.dismiss
+    # acciones sobre repositorio
+    # - content.action.edit
+    - content.action.view
+    # tooltips
+    - content.tooltips
+
+  # soporte de idiomas
+  language: es    # Idioma predefinido
+ 
+   # Opciones de temas y colores
+  palette: 
+    # Cambio de paleta al modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Cambia al modo oscuro 
+      # primary: indigo
+      # accent: blue
+      primary: amber
+      accent: lime
+    # Cambio de paleta al modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4     # icono
+        name: Cambia al modo claro      # mensaje
+      primary: amber
+      accent: lime
+
+
+
+markdown_extensions: 
+  # "advertencias"
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # anotaciones
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  # grids
+  - attr_list
+  - md_in_html
+  # emojis - iconos
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # Iconos LOCALES
+      options:
+        custom_icons:
+          - overrides/.icons    # Carpeta local - ruta desde directorio raiz del proyecto
+  # pestañas de contenido
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  # matematica
+  - pymdownx.arithmatex:
+      generic: true
+  # Tablas (activado por defecto)
+  - tables
+  #bloques codigo
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite   # habilita remarcado de renglones
+  - pymdownx.snippets       # habilita importar código de otros archivos
+  - pymdownx.superfences    # habilita anidado de otros contenidos
+  # notas al pie
+  - footnotes
+  # formateo
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # opciones de imagenes
+  - attr_list
+  - md_in_html
+  # listas especiales
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # tooltips
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  # - pymdownx.snippets:
+  #     auto_append:
+  #         - includes/glosario.md
+
+
+extra:
+  # Etiquetas de contenidos
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    YAML: yaml
+    Python: python
+    Docker: docker 
+    Podman: podman 
+    MarkDown: markdown
+    MkDocs: mkdocs
+    TypeScript: ts
+    CSV: csv
+    Bash: bash 
+
+
+extra_javascript:
+  # Tablas ordenables - TableSort
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js        # archivo local
+
+
+plugins:
+  # Imagenes
+  # - glightbox
+  # privacidad - hace copia local de contenidos remotos
+  - privacy
+  # busqueda
+  - search
+  # fechas de repositorio
+  - git-revision-date-localized:
+      enabled: true
+      enable_creation_date: true
+      type: date        # fecha
+      # type: timeago       # tiempo desde publicación
+      fallback_to_build_date: true
+
+
+# nav:
+
+
+

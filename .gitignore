@@ -1,4 +1,12 @@
 
 
-venv/
+venv
 
+.cache
+.site
+
+*.png
+*.jpg
+*.webp
+*.jpeg
+*.bmp
