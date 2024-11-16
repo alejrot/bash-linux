@@ -143,7 +143,7 @@ echo "Tienes $age años"
 
 
 
-
+<!-- 
 ### Asignaciones de variables
 
 
@@ -156,10 +156,16 @@ Ejemplos
 texto="Hola"
 indice=1
 ```
-Hay que tener cuidado de no dejar nunca espacios en blanco alrededor del signo **'\='**.
+ -->
 
-El valor de una variable se puede copiar a otra usando el operador **'\$'**.
+<!-- 
+Hay que tener cuidado de no dejar nunca espacios en blanco alrededor del signo **'\='**. 
+-->
 
+<!--
+ El valor de una variable se puede copiar a otra usando el operador **'\$'**. 
+ -->
+<!-- 
 ```bash
 variable_2=$variable_1  # copia de valor
 ```
@@ -167,8 +173,9 @@ Ejemplo:
 ```bash
 texto="Hola mundo" 
 variable=$texto
-```
+``` -->
 
+<!-- 
 Si el valor a guardar procede de un comando hay dos opciones para hacerlo: con paréntesis y con comillas inclinadas.
 
 ```bash
@@ -182,6 +189,8 @@ Ejemplo de uso: asignación de lista de ficheros y directorios
 encontrados=$(ls -a) # uso parentesis
 encontrados=`ls -a` # uso comillas inclinadas
 ```
+ -->
+
 
 ## Operadores Condicionales
 

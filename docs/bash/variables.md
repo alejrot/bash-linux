@@ -34,7 +34,9 @@ Las variables en Bash se crean al asignarle un valor con el operador `=`:
 variable=valor
 ```
 
-Estas pueden ser creadas sin valor:
+Hay que tener cuidado de no dejar nunca espacios en blanco alrededor del signo `=` para permitir la asignación del valor.
+
+Sin embargo, las variables pueden ser creadas sin valor dejando en blanco el miembro derecho de la asignación:
 
 ```bash
 variable=
@@ -156,15 +158,31 @@ echo ${variable}Mundo   # da 'HolaMundo'
 ### Sustitución de comandos
 
 La sustitución de comandos consiste en el reemplazo de un comando por su valor de salida. 
-Utiliza los paréntesis (`()`) para englobar los comandos.
+Suelen utilizarse los paréntesis (`()`) para englobar los comandos.
 
-Por ejemplo, para leer el valor de la fecha actual existe el comando `date`.
-La fecha se guarda en una variable 
-mediante la sustitución de comandos:
 
-```bash
+Por ejemplo:
+para leer el valor de la fecha actual con el comando `date`
+y guardarla en una variable:
+
+```bash 
 fecha_hoy=$(date)
 ```
+
+Una alternativa equivalente es el uso de las comillas inclinadas (\`\`) para rodear los comandos:
+
+```bash 
+fecha_hoy=`date`
+```
+
+Otro ejemplo es el guardado de los ficheros y subdirectorios encontrados con el comando `ls`:
+
+```bash
+encontrados=$(ls -a)    # uso parentesis
+encontrados=`ls -a`     # uso comillas inclinadas
+```
+
+
 
 
 ## Referencias
