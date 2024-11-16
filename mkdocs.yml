@@ -2,7 +2,7 @@ site_name: Bash & GNU/Linux
 
 # site_url:   
 
-# repo_url: https://github.com/MarceloMarot/bash-linux
+# repo_url: https://github.com/alejrot/bash-linux
 # repo_name: bash-linux
 # edit_uri: edit/master/docs/
 
@@ -86,18 +86,16 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: Cambia al modo oscuro 
-      # primary: indigo
-      # accent: blue
-      primary: amber
-      accent: lime
+      primary: green
+      accent: green
     # Cambio de paleta al modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4     # icono
         name: Cambia al modo claro      # mensaje
-      primary: amber
-      accent: lime
+      primary: green
+      accent: light green
 
 
 
@@ -194,12 +192,12 @@ plugins:
   # busqueda
   - search
   # fechas de repositorio
-  - git-revision-date-localized:
-      enabled: true
-      enable_creation_date: true
-      type: date        # fecha
-      # type: timeago       # tiempo desde publicación
-      fallback_to_build_date: true
+  # - git-revision-date-localized:
+  #     enabled: true
+  #     enable_creation_date: true
+  #     type: date        # fecha
+  #     # type: timeago       # tiempo desde publicación
+  #     fallback_to_build_date: true
 
 
 # nav:
