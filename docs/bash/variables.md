@@ -1,3 +1,24 @@
+---
+tags:
+# - HTML
+# - JavaScript
+# - CSS
+# - YAML
+# - Python
+# - Docker
+# - Podman
+# - MarkDown
+# - MkDocs
+# - TypeScript
+# - CSV
+- Bash
+# - Linux
+# - GNU
+# - Debian
+# - Arch
+# - Fedora
+---
+
 # Variables de shell
 
 Las variables de Bash son elementos que almacenan valores, los cuales pueden ser leidos y también modificados.
@@ -132,7 +153,7 @@ variable="Hola"
 echo ${variable}Mundo   # da 'HolaMundo'
 ```
 
-### Sustitucion de comandos
+### Sustitución de comandos
 
 La sustitución de comandos consiste en el reemplazo de un comando por su valor de salida. 
 Utiliza los paréntesis (`()`) para englobar los comandos.

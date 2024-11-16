@@ -1,3 +1,23 @@
+---
+tags:
+# - HTML
+# - JavaScript
+# - CSS
+# - YAML
+# - Python
+# - Docker
+# - Podman
+# - MarkDown
+# - MkDocs
+# - TypeScript
+# - CSV
+# - Bash
+- Linux
+- GNU
+# - Debian
+# - Arch
+# - Fedora
+---
 
 
 # PATH y Ejecutables

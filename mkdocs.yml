@@ -37,6 +37,12 @@ theme:
       ts: simple/typescript
       csv: fontawesome/solid/file-csv
       bash: simple/gnubash
+      linux: simple/linux
+      gnu: simple/gnu
+      fedora: simple/fedora
+      debian: simple/debian
+      arch: simple/archlinux
+
       # icono comodín
       # default: material/cursor-default-click
 
@@ -164,7 +170,7 @@ markdown_extensions:
 extra:
   # Etiquetas de contenidos
   tags:
-    HTML5: html
+    HTML: html
     JavaScript: js
     CSS: css
     YAML: yaml
@@ -176,7 +182,11 @@ extra:
     TypeScript: ts
     CSV: csv
     Bash: bash 
-
+    Linux: linux
+    GNU: gnu
+    Fedora: fedora
+    Debian: debian
+    Arch: arch
 
 extra_javascript:
   # Tablas ordenables - TableSort
@@ -191,6 +201,11 @@ plugins:
   - privacy
   # busqueda
   - search
+
+
+  # - tags
+  - tags:
+      tags_file: tags.md
   # fechas de repositorio
   # - git-revision-date-localized:
   #     enabled: true
@@ -200,12 +215,13 @@ plugins:
   #     fallback_to_build_date: true
 
 
+
+
 nav:
 
   - Bash:
-    # - bash/Bash.md  
     - bash/variables.md
-    - bash/entorno.md
+    # - bash/entorno.md
     - bash/comandos.md   
 
   - GNU/Linux:
@@ -219,6 +235,6 @@ nav:
     - bash/Bash.md  
 
 
-
+  - Tags: tags.md
 
 
