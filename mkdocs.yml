@@ -200,7 +200,25 @@ plugins:
   #     fallback_to_build_date: true
 
 
-# nav:
+nav:
+
+  - Bash:
+    # - bash/Bash.md  
+    - bash/variables.md
+    - bash/entorno.md
+    - bash/comandos.md   
+
+  - GNU/Linux:
+    - linux/signals.md
+    - linux/dnf.md  
+    - linux/montar_discos.md  
+    - linux/path_ejecutables.md  
+    - linux/servicios_inicio.md  
+
+  - Borradores:
+    - bash/Bash.md  
+
+
 
 
 

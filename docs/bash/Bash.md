@@ -122,6 +122,7 @@ no pueden compartir la cuenta de Netflix
 miTexto
 ``` 
 
+<!-- 
 ## Variables
 Para **recibir un valor ingresado por el usuario** y guardarlo en una variable se usa el comando **read**:
 ```bash
@@ -137,7 +138,11 @@ Ejemplo: preguntar la edad de usuario
 echo "¿Tu edad?"
 read  age
 echo "Tienes $age años"
-```
+``` 
+-->
+
+
+
 
 ### Asignaciones de variables
 
@@ -178,7 +183,7 @@ encontrados=$(ls -a) # uso parentesis
 encontrados=`ls -a` # uso comillas inclinadas
 ```
 
-## Condicionales
+## Operadores Condicionales
 
 Las condiciones se escriben entre corchetes y con las variables precedidas con el signo \$. Algunos operadores relacionales usados son:
 

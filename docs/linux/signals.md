@@ -38,6 +38,10 @@ kill -SIGUSR1  pid_destino
 kill -10       pid_destino
 ```
 
+Si no se indica el nombre ni el número de señal deseada entonces se envía la señal `SIGKILL`, 
+que es la que le da nombre al comando.
+
+
 
 !!! info "PID actual"
 
