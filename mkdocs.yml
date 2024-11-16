@@ -1,10 +1,11 @@
-site_name: Bash & GNU/Linux
+site_name: Bash - GNU/Linux
+site_description: Documentación sobre Bash y el universo Linux
+site_url: https://alejrot.github.io/bash-linux/
 
-# site_url:   
 
-# repo_url: https://github.com/alejrot/bash-linux
-# repo_name: bash-linux
-# edit_uri: edit/master/docs/
+repo_url: https://github.com/alejrot/bash-linux
+repo_name: bash-linux
+edit_uri: edit/master/docs/
 
 copyright: Copyright &copy; 2024 Marcelo Marot Rosas
 
@@ -218,6 +219,9 @@ plugins:
 
 
 nav:
+
+  - Introducción:
+    - index.md
 
   - Bash:
     - bash/variables.md
