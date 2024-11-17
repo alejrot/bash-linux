@@ -226,6 +226,13 @@ nav:
   - Bash:
     - bash/variables.md
     # - bash/entorno.md
+    - bash/operadores.md
+    - bash/saltos.md
+    - bash/bucles.md
+    - bash/strings.md
+    - bash/arreglos.md
+    - bash/funciones.md
+
     - bash/comandos.md   
 
   - GNU/Linux:
@@ -234,6 +241,7 @@ nav:
     - linux/montar_discos.md  
     - linux/path_ejecutables.md  
     - linux/servicios_inicio.md  
+    - linux/permisos_usuario.md
 
   - Borradores:
     - bash/Bash.md  

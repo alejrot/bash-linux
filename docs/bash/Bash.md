@@ -191,7 +191,7 @@ encontrados=`ls -a` # uso comillas inclinadas
 ```
  -->
 
-
+<!-- 
 ## Operadores Condicionales
 
 Las condiciones se escriben entre corchetes y con las variables precedidas con el signo \$. Algunos operadores relacionales usados son:
@@ -223,8 +223,10 @@ Para usar los símbolos de asignación habituales de los lenguajes de programaci
 
 ```bash
 ((age <= 21))        # doble paréntesis
-```
+``` 
+-->
 
+<!-- 
 ## Saltos condicionales
 
 ### Condicional 'if'
@@ -301,6 +303,10 @@ case $valor in
     ;;
 esac
 ```
+ -->
+
+<!-- 
+
 
 ## Bucles
 
@@ -349,7 +355,10 @@ do
     echo $i
 done
 ```
+ -->
 
+
+<!-- 
 ## Operadores Logicos
 
 | Simbolo | Operador |
@@ -361,7 +370,9 @@ done
 en algunos casos se puede usar:
 
 | -o | OR |
+ -->
 
+<!-- 
 
 ## Operaciones Aritmeticas
 
@@ -390,10 +401,11 @@ $(expr $x / $y )
 $(expr $x % $y )
 ```
 
-**Importante:** Bash **NO** soporta operaciones con numeros flotantes por defecto; sin embargo existen paquetes con comandos adicionales para añadir esta funcionalidad.
+**Importante:** Bash **NO** soporta operaciones con numeros flotantes por defecto; sin embargo existen paquetes con comandos adicionales para añadir esta funcionalidad. 
+-->
 
 
-
+<!-- 
 ## Comparar Strings
 
 Las cadenas de caracteres se pueden comparar haciendo la conversión de sus valores a texto:
@@ -496,6 +508,11 @@ ruta="/home/usuario/nombre_archivo.txt"
 ruta_padre="${ruta%/*}"     # borrado desde ultima barra
 ```
 
+ -->
+
+
+
+
 
 ## Declare
 
@@ -510,7 +527,11 @@ declare -r <variable>=valor
 ejemplo aplicado:
 ```bash
 declare -r pwdfile=/etc/passwd
-```
+``` 
+
+
+
+<!-- 
 
 
 ## Arrays
@@ -556,8 +577,11 @@ arreglo+=(nuevo_elemento)
 También pueden reemplazarse elementos por simpleasignación:
 ```bash
 arreglo[indice]=valor
-```
+``` 
+-->
 
+
+<!-- 
 ## Funciones
 
 Definir función,sin argumentos:
@@ -585,6 +609,11 @@ Las variables internas de las funciones son *globales*, por tanto pueden ser afe
 ```bash
 local <variable>
 ```
+ -->
+
+
+
+
 
 ## Check directory
 

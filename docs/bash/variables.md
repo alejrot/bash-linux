@@ -184,7 +184,6 @@ encontrados=`ls -a`     # uso comillas inclinadas
 
 
 
-
 ## Referencias
 
 [Delf Stack - Interpolación de variables en Bash Script](https://www.delftstack.com/es/howto/linux/variable-interpolation-in-bash/)
