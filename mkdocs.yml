@@ -232,6 +232,10 @@ nav:
     - bash/strings.md
     - bash/arreglos.md
     - bash/funciones.md
+    - bash/argumentos.md
+    - bash/verificar.md
+    - bash/streams.md
+    - bash/pipes.md
 
     - bash/comandos.md   
 

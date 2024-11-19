@@ -61,7 +61,7 @@ $(expr $x % $y )
 
 
 
-## Operadores Condicionales
+## Operadores relacionales
 
 Las condiciones se escriben entre corchetes y con las variables precedidas con el signo `$`. 
 Algunos operadores relacionales usados son:
@@ -94,8 +94,6 @@ Para usar los símbolos de asignación habituales de los lenguajes de programaci
 ```bash
 ((age <= 21))        # doble paréntesis
 ```
-
-
 
 
 

@@ -182,6 +182,20 @@ encontrados=$(ls -a)    # uso parentesis
 encontrados=`ls -a`     # uso comillas inclinadas
 ```
 
+## Propiedades específicas
+
+A las variables se las puede declarar con propiedades específicas mediante el comando *declare*:
+```bash
+declare opcion variable
+```
+Ejemplo: variable de solo lectura
+```bash
+declare -r variable=valor
+```
+ejemplo aplicado:
+```bash
+declare -r pwdfile=/etc/passwd
+``` 
 
 
 ## Referencias
@@ -189,3 +203,5 @@ encontrados=`ls -a`     # uso comillas inclinadas
 [Delf Stack - Interpolación de variables en Bash Script](https://www.delftstack.com/es/howto/linux/variable-interpolation-in-bash/)
 
 [Docker Docs - Set, use, and manage variables in a Compose file with interpolation ](https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/#interpolation-syntax)
+
+

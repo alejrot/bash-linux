@@ -514,6 +514,7 @@ ruta_padre="${ruta%/*}"     # borrado desde ultima barra
 
 
 
+<!-- 
 ## Declare
 
 A las variables se las puede declarar con propiedades específicas mediante el comando *declare*:
@@ -527,7 +528,8 @@ declare -r <variable>=valor
 ejemplo aplicado:
 ```bash
 declare -r pwdfile=/etc/passwd
-``` 
+```  
+-->
 
 
 
@@ -613,7 +615,7 @@ local <variable>
 
 
 
-
+<!-- 
 
 ## Check directory
 
@@ -636,8 +638,12 @@ if [ -f $archivo ]
 then
     echo "$archivo existe"
 fi
-```
+``` 
+-->
 
+
+
+<!-- 
 ## Argumentos entrada
 
 Se leen los primeros tres argumentos de entrada del script:
@@ -670,8 +676,11 @@ for (( i=0 ; i <n; i++ ))
 do
     echo "$i --> ${args[$i]}"
 done
-```
+``` -->
 
+
+
+<!-- 
 ## stdin
 
 *stdin* es el "Standard Input" y se encarga de manejar la entrada de datos por teclado. Es el *stream estandar* numero **0**. En Linux y MAC el archivo de stdin se encuentra habitualmente en la ruta: 
@@ -706,9 +715,9 @@ Lo mismo con notación más sencilla
 ```bash
 ls -l >& resultado.txt 
 ```
+ -->
 
-
-
+<!-- 
 ##  PIPEs - Concatenado de comandos
 
 El pipe  permite **concatenar comandos** separados por el signo **\|**. 
@@ -730,13 +739,17 @@ Ejemplo: contar el numero de caracteres de una variable:
 ```bash
 MENSAJE="hola mundo"
 echo $MENSAJE | wc -m
-```
+``` 
+-->
+
+
 
 ## Concatenando Scripts - Importación y Exportación
 
 En este ejemplo se crean dos archivos de script llamados "primero.sh" y "segundo.sh" almacenados en un mismo directorio
 
 Primer archivo:
+
 ```bash
 #se crea y exporta una variable
 MENSAJE="Yo soy Sam"
@@ -764,6 +777,9 @@ set -x
 <rutina a debuguear>
 set +x
 ```
+
+
+
 
 ## TRUCO: CAMBIAR LA RUTA DEL EJECUTABLE POR:
 ```bash
