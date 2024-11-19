@@ -224,6 +224,8 @@ nav:
     - index.md
 
   - Bash:
+    - bash/comenzar.md
+    - bash/scripts.md
     - bash/variables.md
     # - bash/entorno.md
     - bash/operadores.md
