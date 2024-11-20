@@ -188,7 +188,25 @@ A las variables se las puede declarar con propiedades específicas mediante el c
 ```bash
 declare opcion variable
 ```
+
+Algunas de las opciones disponibles del comando son las siguientes:
+
+|Opción| Significado | Opción inversa |
+|:---|:----|:----|
+|`-r`| sólo lectura (*read only*) | `+r` |
+|`-i`| convierte a enteros (*integer*)| `+i` |
+|`-u`| convierte a mayúsculas (*uppercase* )| `+u` |
+|`-l`| convierte a minúsculas (*lowercase*) | `+l` |
+|`-x`| exportación a procesos hijos| `+x` |
+|`-n`| es referencia a otra variable ("apuntador") | `+n` |
+
+
+
+
+<!-- 
+
 Ejemplo: variable de solo lectura
+
 ```bash
 declare -r variable=valor
 ```
@@ -196,6 +214,38 @@ ejemplo aplicado:
 ```bash
 declare -r pwdfile=/etc/passwd
 ``` 
+ -->
+
+
+Por ejemplo, para interpretar un `string` como número o incluso como operación aritmética se usa la opción `-i`:
+
+ para forzar 
+```bash
+declare -i multiplicar="3*2"
+``` 
+Lo cual es equivalente a:
+```bash
+multiplicar=$((3*2))
+``` 
+
+Las opciones inversas existen para anular las opciones preasignadas a una varible ya creada.
+
+
+Ejemplo: una variable que contiene sólo texto en mayúsculas (`-u`):
+
+```bash
+# opción mayusculas
+declare -u hola="hola mundo"
+echo $hola      # 'HOLA MUNDO'
+```
+
+La opción se quita con su opción opuesta (`+u`):
+
+```bash
+declare +u hola="hola mundo"
+echo $hola      # 'hola mundo'
+```
+
 
 
 ## Referencias
@@ -205,3 +255,7 @@ declare -r pwdfile=/etc/passwd
 [Docker Docs - Set, use, and manage variables in a Compose file with interpolation ](https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/#interpolation-syntax)
 
 
+
+[LinuxSimply - String Interpolation in Bash [4 Methods]](https://linuxsimply.com/bash-scripting-tutorial/string/basics/string-interpolation/)
+
+[PhoenixNAP - Bash declare Statement: Syntax and Examples](https://phoenixnap.com/kb/bash-declare)

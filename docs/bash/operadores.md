@@ -97,10 +97,6 @@ Para usar los símbolos de asignación habituales de los lenguajes de programaci
 
 
 
-
-
-
-
 ## Operadores Logicos
 
 | Simbolo | Operador |
@@ -117,6 +113,35 @@ en algunos casos se puede usar:
 
 
 
+!!! tip "TIP: ver resultado de operadores relacionales"
+
+    El resultado se puede comprobar agregando la secuencia:
+
+    ```bash
+    ((age <= 21))  && echo "true" || echo "false"
+    ```
+
+    ```bash
+    test $age -le 21 && echo "true" || echo "false"
+    ```
+
+    Los operadores relacionales dan  el valor `0` cuando la condición se cumple 
+    y `1` cuando no.
+
+    ```bash
+    age=35
+    test $age -le 21 && echo $? || echo $?      # '1'
+    ```
+    ```bash
+    age=8
+    test $age -le 21 && echo $? || echo $?      # '0'
+    ```
 
 
 
+
+
+
+## Referencias:
+
+[Linux Handbook - Using test Command in Bash Scripts](https://linuxhandbook.com/bash-test-command/)

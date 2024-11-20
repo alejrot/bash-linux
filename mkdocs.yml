@@ -78,7 +78,7 @@ theme:
     - announce.dismiss
     # acciones sobre repositorio
     # - content.action.edit
-    - content.action.view
+    # - content.action.view
     # tooltips
     - content.tooltips
 

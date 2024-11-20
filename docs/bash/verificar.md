@@ -56,3 +56,9 @@ then
     echo "$archivo existe"
 fi
 ```
+
+
+
+## Referencias:
+
+[Linux Handbook - Using test Command in Bash Scripts](https://linuxhandbook.com/bash-test-command/)
