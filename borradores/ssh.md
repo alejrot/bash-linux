@@ -303,6 +303,8 @@ vim scp ://server/ruta_archivo
 
 ## Recomendado: [ver servidor NGINX](https://nginx.org/en/)
 
+[Imagen oficial de NGIX](https://hub.docker.com/_/nginx)
+
 
 
 
