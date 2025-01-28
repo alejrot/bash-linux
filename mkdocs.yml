@@ -239,7 +239,6 @@ nav:
     - bash/streams.md
     - bash/pipes.md
 
-    - bash/comandos.md   
 
   - GNU/Linux:
     - linux/signals.md
@@ -250,8 +249,10 @@ nav:
     - linux/permisos_usuario.md
 
   - Borradores:
+    - bash/comandos.md   
     - bash/Bash.md  
-
+    - linux/estructura_directorios.md
+    - linux/sistema_archivos.md
 
   - Tags: tags.md
 

@@ -70,7 +70,7 @@ echo $variable
 La copia de valores se hace con ayuda del operador `=`.
 
 
-### valor simple
+### Valor simple
 
 El valor de las variables se lee anteponiendo el operador `$`.
 Por ejemplo, para copiar el valor a una nueva variable: 
@@ -85,7 +85,7 @@ O también:
 nueva_variable=${variable}
 ```
 
-### valor predefinido
+### Valor predefinido
 
 A las variables se les puede asignar un valor *por defecto* para cuando no estén definidas de antemano:
 
@@ -107,7 +107,7 @@ PI=${PI:-3.14}
 echo $PI    # ahora da '3.141592'
 ```
 
-### valor con error
+### Valor con error
 
 
 Esta opción dispara una rutina de error en caso que la variable no tenga valor preasignado.
@@ -115,11 +115,11 @@ Esta opción dispara una rutina de error en caso que la variable no tenga valor 
 Ejemplo:
 
 ```bash
-PI=${PI:?echo 'Error: variable no inicializada' }
+PI=${PI:? 'Error: variable no inicializada' }
 ```
-**(revisar)**
+en este caso se lanza el mensaje indicado entre comillas.
 
-### valor alternativo
+### Valor alternativo
 
 
 Esta opción reemplaza el valor de una variable si ésta ya tiene valor:

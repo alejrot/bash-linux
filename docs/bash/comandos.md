@@ -147,7 +147,9 @@ https://www.hostinger.es/tutoriales/comando-grep-linux
 
 https://www.hostinger.es/tutoriales/el-comando-sed-de-linux-usos-y-ejemplos/
 
+## exec
 
+https://es.linux-console.net/?p=13564
 
 ## Curl
 
