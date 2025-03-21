@@ -3,15 +3,13 @@ services:
 
   bash-linux-compose:
     build:  .
+    container_name: bash-linux
     ports:
       - "${PORT:-8000}:8000"
-
     security_opt: 
       - label=disable
-
     volumes:
       - ./:/docs
-
     stdin_open: true
     tty: true
 
